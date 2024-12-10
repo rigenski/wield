@@ -1,7 +1,26 @@
 'use client';
 
+import { useEffect, useRef, useState } from "react";
+
 export function Section1() {
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (scrollContainerRef.current) {
+                setScrollPosition(scrollContainerRef.current.scrollTop);
+            }
+        };
+
+        const container = scrollContainerRef.current;
+        container?.addEventListener('scroll', handleScroll);
+
+        return () => {
+            container?.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div className="relative w-full">

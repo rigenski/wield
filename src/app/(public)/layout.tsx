@@ -4,7 +4,7 @@ import Header from './_components/header';
 function Layout({ children }: TLayoutProps) {
     return (
         <>
-            <main id='landing-page-wield'>
+            <main>
                 <Header />
                 {children}
             </main>
