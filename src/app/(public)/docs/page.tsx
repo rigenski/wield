@@ -97,7 +97,7 @@ export default function Content() {
                         <div className="pl-4 w-7/12 h-full">
                             <div
                                 id="screen"
-                                className="w-full h-screen  overflow-y-auto"
+                                className="w-full h-screen  overflow-y-auto pr-10"
                                 style={{
                                     WebkitScrollSnapType: "none",
                                 }}
