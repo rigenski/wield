@@ -5,9 +5,9 @@ function Layout({ children }: TLayoutProps) {
     return (
         <>
             <main>
-            <Header />
+                <Header />
                 {children}
-                </main>
+            </main>
         </>
     );
 }

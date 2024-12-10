@@ -71,6 +71,7 @@ const config = {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
+                wield: "#ED3D3D"
             },
             backgroundImage: {
                 'custom-gradient': 'linear-gradient(to top right, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%)',

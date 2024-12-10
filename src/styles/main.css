@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("./fonts.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,104 +100,14 @@
   background: #2D384D;
 }
 
-.comic-neue-light {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .comic-neue-bold {
-    font-family: "Comic Neue", cursive;
+  .gilroy-bold {
+    font-family: "Gilroy", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .comic-neue-light-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .comic-neue-regular-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .comic-neue-bold-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: italic;
   }
 
-  .balsamiq-sans-regular {
-    font-family: "Balsamiq Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .balsamiq-sans-bold {
-    font-family: "Balsamiq Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .balsamiq-sans-regular-italic {
-    font-family: "Balsamiq Sans", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .balsamiq-sans-bold-italic {
-    font-family: "Balsamiq Sans", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-
-  .mulish-light {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .mulish-regular {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .mulish-medium {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .mulish-bold {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .mulish-extra-bold {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .mulish-black {
-    font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
+  .gilroy-medium {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
     font-style: normal;
   }
