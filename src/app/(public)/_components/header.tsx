@@ -55,7 +55,6 @@ export const Header = () => {
     return (
         <header className="fixed top-0 w-screen z-50 p-4 backdrop-blur-sm">
             <div className="container flex justify-between gap-4 px-4 py-2">
-                {/* Pages */}
                 <div className="flex gap-4">
                     {navigations.map((navigation, index) => {
                         return (
@@ -66,8 +65,8 @@ export const Header = () => {
                     })}
                 </div>
 
-                <div className="rounded-full border border-white bg-[#393939]/25 px-4 py-2">
-                    <p className="font-bold text-white">Try Wield</p>
+                <div className={`rounded-full border ${activeTab === 2 ? "border-wield" : "border-white"} bg-[#393939]/25 px-4 py-2`}>
+                    <p className={`font-bold ${activeTab === 2 ? "text-wield" : "text-white"}`}>Try Wield</p>
                 </div>
             </div>
         </header>
