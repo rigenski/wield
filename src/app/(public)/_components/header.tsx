@@ -69,7 +69,7 @@ export const Header = () => {
 
                 <div className='flex gap-2 items-center basis-1/4'>
                     <Image src={'/assets/layout/wield.svg'} width={30} height={30} className='w-auto h-[30px]' alt='' />
-                    <p className='text-2xl font-bold [text-shadow:0px_0px_5px_#fff]'>Wield</p>
+                    <p className='text-2xl text-white font-bold [text-shadow:0px_0px_3px_#fff]'>Wield</p>
                 </div>
 
                 <div className='flex w-full items-center justify-center gap-16 basis-2/4'>
