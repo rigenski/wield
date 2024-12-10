@@ -16,7 +16,7 @@ export default function Footer() {
                         announcements
                     </p>
                     <div className="flex gap-4">
-                        <Link className="hover:animate-shake" href={X_COIN}>
+                        <Link className="hover:animate-shake" href={X_COIN} target="_blank">
                             <div className="w-[480px] bg-wield p-6">X $WIELD</div>
                         </Link>
                     </div>

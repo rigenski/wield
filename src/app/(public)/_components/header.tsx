@@ -96,15 +96,15 @@ export const Header = () => {
                 </div>
 
                 <div className="flex w-full basis-1/4 items-center justify-end gap-4">
-                    <Link href={X_DEV}>
+                    <Link href={X_DEV} target="_blank">
                         <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt="" className="h-[40px] w-auto hover:animate-shake" />
                     </Link>
 
-                    <Link href={X_COIN}>
+                    <Link href={X_COIN} target="_blank">
                         <Image src={'/assets/layout/x-wield.svg'} width={40} height={40} alt="" className="h-[40px] w-auto hover:animate-shake" />
                     </Link>
 
-                    <Link href={X_BUY} className="cursor-pointer rounded-full border border-[#FA2C2C] bg-[#ED0C0C12] px-4 py-2">
+                    <Link href={X_BUY} target="_blank" className="cursor-pointer rounded-full border border-[#FA2C2C] bg-[#ED0C0C12] px-4 py-2">
                         <p className="text-[#FA2C2C]">Buy $WIELD</p>
                     </Link>
                 </div>
