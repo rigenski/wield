@@ -5,9 +5,6 @@ import Link from 'next/link';
 export function Section2() {
     return (
         <section className="relative h-screen w-full overflow-hidden">
-            <div className="absolute left-0 right-0 top-0 z-0 h-full w-full">
-                <div className="h-screen w-full bg-gradient-to-b from-[#ED3D3D]/50 to-20%" />
-            </div>
 
             <div className="absolute bottom-0 left-0 right-0 z-0 h-full w-full">
                 <div className="h-screen w-full bg-gradient-to-t from-[#ED3D3D]/50 to-20%" />

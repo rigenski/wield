@@ -1,42 +1,36 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
 
-export function Section1() {
+interface Section1Props {
+    height: number;
+    activeHeight: number;
+}
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
+export function Section1({ height, activeHeight }: Section1Props) {
+    const opacity = () => {
+        const newOpacity = Math.max(0, Math.min(1, 1 - activeHeight / height));
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (scrollContainerRef.current) {
-                setScrollPosition(scrollContainerRef.current.scrollTop);
-            }
-        };
+        return newOpacity;
+    };
 
-        const container = scrollContainerRef.current;
-        container?.addEventListener('scroll', handleScroll);
+    const scale = () => {
+        const newScale = Math.max(0, Math.min(1, 1 - activeHeight / height));
 
-        return () => {
-            container?.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+        return newScale;
+    };
 
     return (
         <div className="relative w-full">
             <section className="relative h-screen w-full overflow-hidden" style={{ height: '200vh' }}>
                 <div className="flex h-full w-full flex-col justify-between">
-                    <div className="h-full w-full">
+                    <div className="w-full">
                         <div className="h-screen w-full bg-gradient-to-b from-[#ED3D3D]/50 to-20%" />
                     </div>
 
-                    <div className="h-full w-full">
-                        <div className="h-screen w-full bg-gradient-to-t from-[#ED3D3D]/50 to-20%" />
-                    </div>
                 </div>
             </section>
 
-            <div className="absolute left-1/2 top-1/4 z-50">
+            <div className="absolute left-1/2 z-50 transition-none" style={{ top: `${activeHeight + (height / 2 - 100)}px`, opacity: opacity(), transform: `scale(${scale()}) translateY(${activeHeight}px)` }}>
                 <div
                     className="-ml-48 mb-24 text-[140px] font-bold text-[#FFE0E0] [text-shadow:0px_0px_5px_#fff]"
                 >
