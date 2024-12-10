@@ -61,7 +61,7 @@ export const Header = () => {
             case ARCHITECTURE:
                 setActiveTab(2);
                 break;
-                case DOCS:
+            case DOCS:
                 setActiveTab(3);
                 break;
             case ABOUT:
@@ -84,7 +84,7 @@ export const Header = () => {
                 <div className='flex w-full items-center justify-center gap-16 basis-2/4'>
                     {navigations.map((navigation, index) => {
                         return (
-                            <Link key={index} href={navigation.link} className={cn('text-xl', `${activeTab === navigation.tab ? "text-wield" : "text-white"}`)}>
+                            <Link key={index} href={navigation.link} className={cn('text-xl', `${activeTab === navigation.tab ? "text-white font-bold" : "text-white"}`)}>
                                 <p>{navigation.title}</p>
                             </Link>
                         );
