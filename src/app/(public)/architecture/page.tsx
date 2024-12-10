@@ -6,8 +6,6 @@ import { RandomizedTextAnimation } from '@/components/randomized-text-animation'
 const Page = () => {
   return (
     <div className='h-screen w-screen relative'>
-      <RandomizedTextAnimation />
-      
       <div className="flex flex-row">
         <img className="fixed top-0 left-0 w-screen object-fill z-0" src='assets/layout/overlay.png' />
         <div className="mx-10 mt-[100px]">
