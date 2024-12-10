@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { X_COIN } from '@/constants/option';
+import Link from 'next/link';
+import React from 'react';
 
 export default function Footer() {
     return (
-        <div className="pt-16 pb-48">
-            <div className="flex justify-between mb-4 items-center gap-4">
+        <div className="pb-48 pt-16">
+            <div className="mb-4 flex items-center justify-between gap-4">
                 <div>
                     <p className="mb-4">
                         Follow our Developer and WIELD to make sure
@@ -16,16 +16,16 @@ export default function Footer() {
                         announcements
                     </p>
                     <div className="flex gap-4">
-                        <Link className="hover:animate-shake" href="https://x.com/wield">
-                            <div className="w-[480px] bg-wield p-6">WIELD ON X</div>
+                        <Link className="hover:animate-shake" href={X_COIN}>
+                            <div className="w-[480px] bg-wield p-6">X $WIELD</div>
                         </Link>
                     </div>
                 </div>
             </div>
             <div className="mb-12">
-                <div className="w-full border-[0.5px] opacity-50 border-[#F1EEE5]"></div>
+                <div className="w-full border-[0.5px] border-[#F1EEE5] opacity-50"></div>
             </div>
-            <div className="flex justify-between items-center gap-4">
+            <div className="flex items-center justify-between gap-4">
                 <p className="font-bold">WIELD</p>
                 <p>Copyright © 2024 All rights reserved</p>
             </div>
