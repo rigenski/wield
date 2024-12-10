@@ -1,8 +1,13 @@
 import DescBox from "./_components/descBox";
+import { RandomizedTextAnimation } from "@/components/randomized-text-animation";
 
 export default function Page() {
+
+
     return (
         <main className="h-screen w-full relative overflow-hidden">
+            <RandomizedTextAnimation />
+
             <img src={"/assets/about/top-overlay.png"} alt="overlay" className="absolute z-10 top-0 w-screen h-[30vh] object-fill" />
             <img src={"/assets/about/bot-overlay.png"} alt="overlay" className="absolute z-10 bottom-0 w-screen object-cover" />
             <div className="flex flex-col w-full h-full justify-center items-center gap-20 mt-10 absolute z-20">
