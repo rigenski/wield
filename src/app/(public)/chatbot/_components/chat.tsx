@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { MultimodalInput } from './multimodal-input';
 import { ChevronLeftIcon } from 'lucide-react';
+import Image from 'next/image'
 
 export function Chat({ id, initialMessages, selectedModelId }: { id: string; initialMessages: Message[]; selectedModelId: string }) {
     const { messages, setMessages, handleSubmit, input, setInput, append, isLoading, stop } = useChat({
@@ -38,7 +39,7 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
             <div className="absolute inset-0 bg-contain bg-center bg-no-repeat">
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative mx-auto flex h-full w-full flex-col">
-                        <div className={`absolute left-[20px] top-[20px] cursor-pointer`}>
+                        <div className={`absolute left-[20px] top-[20px] cursor-pointer z-50`}>
                             <Link href={'/'}>
                                 <div className="flex items-center gap-2">
                                     <ChevronLeftIcon className="size-5 text-white" />
@@ -46,24 +47,11 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
                                 </div>
                             </Link>
                         </div>
-                        <Link href="/" className={`absolute right-[20px] top-[20px] cursor-pointer`}>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#FFFFFF"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="lucide lucide-x"
-                            >
-                                <path d="M18 6 6 18" />
-                                <path d="m6 6 12 12" />
-                            </svg>
-                        </Link>
-                        <div ref={chatContainerRef} className="scrollbar-hide flex-1 overflow-y-auto bg-[#191919] p-4 pt-[60px] shadow-xl">
+                        <div ref={chatContainerRef} className="scrollbar-hide flex-1 overflow-y-auto bg-[url('/assets/chatbot/bg-stars.svg')] pt-[60px] shadow-xl relative">
+                            <div className='w-full h-full absolute top-0 left-0 right-0 z-0'>
+                                <Image src={'/assets/chatbot/gradient.png'} style={{ backgroundImage: 'linear-gradient(200deg, rgba(0,0,0,0), red)' }} width={100} height={100} className='w-full h-full opacity-50' alt='' />
+                            </div>
+
                             <PreviewMessage
                                 key={''}
                                 role={'assistant'}

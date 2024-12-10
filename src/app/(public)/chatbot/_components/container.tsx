@@ -33,9 +33,7 @@ export default function ChatbotContainer() {
                     </div>
                 </div>
                 <div className="w-1/2">
-                    <div className="relative">
-                        <Chat key={id} id={id} initialMessages={[]} selectedModelId={selectedModelId} />
-                    </div>
+                    <Chat key={id} id={id} initialMessages={[]} selectedModelId={selectedModelId} />
                 </div>
             </div>
         </section>
