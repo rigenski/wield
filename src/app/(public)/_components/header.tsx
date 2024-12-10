@@ -29,15 +29,21 @@ const navigations: NavigationItem[] = [
         tab: 2,
     },
     {
+        title: 'Docs',
+        link: '/docs',
+        tab: 3,
+    },
+    {
         title: 'About',
         link: '/about',
-        tab: 3,
+        tab: 4,
     },
 ];
 
 const HOME = "/"
 const INTERACT = '/interact'
 const ARCHITECTURE = "/architecture"
+const DOCS = "/docs"
 const ABOUT = "/about"
 
 export const Header = () => {
@@ -55,8 +61,11 @@ export const Header = () => {
             case ARCHITECTURE:
                 setActiveTab(2);
                 break;
+                case DOCS:
+                setActiveTab(3);
+                break;
             case ABOUT:
-                setActiveTab(3)
+                setActiveTab(4)
                 break;
             default:
                 break;
