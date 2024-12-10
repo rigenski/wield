@@ -1,23 +1,26 @@
-import Image from 'next/image';
+'use client';
+
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export function Section1() {
+    const { scrollY } = useScroll();
+    const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
     return (
         <section className="relative h-screen w-full overflow-hidden">
-            <div className='w-full h-full absolute top-0 left-0 right-0 z-0'>
-                <div className="w-full h-screen bg-gradient-to-b from-[#ED3D3D]/50 to-20% " />
+            <div className="absolute left-0 right-0 top-0 z-0 h-full w-full">
+                <div className="h-screen w-full bg-gradient-to-b from-[#ED3D3D]/50 to-20%" />
             </div>
 
-            <div className='w-full h-full absolute bottom-0 left-0 right-0 z-0'>
-                <div className="w-full h-screen bg-gradient-to-t from-[#ED3D3D]/50 to-20% " />
+            <div className="absolute bottom-0 left-0 right-0 z-0 h-full w-full">
+                <div className="h-screen w-full bg-gradient-to-t from-[#ED3D3D]/50 to-20%" />
             </div>
 
-            <div className="size-full flex justify-center absolute">
-                <Image src={'/assets/homepage/center-glow.svg'} width={100} height={100} alt='' className='w-screen h-screen object-cover' />
-            </div>
-
-            <div className='absolute size-full flex flex-col justify-center items-center'>
-                <p className='text-[140px] text-white mb-24 [text-shadow:0px_0px_5px_#fff] font-bold'>Wield</p>
+            <div className="absolute flex size-full flex-col items-center justify-center">
+                <motion.p className="mb-24 text-[140px] font-bold text-[#FFE0E0] [text-shadow:0px_0px_5px_#fff]" style={{ opacity }}>
+                    Wield
+                </motion.p>
             </div>
         </section>
-    )
+    );
 }

@@ -1,16 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url("./fonts.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.font-plusJakartaSans {
-    font-family: var(--font-plus-jakarta-sans);
-}
-
-.font-outfit {
-    font-family: var(--font-outfit);
-}
 
 @layer base {
     :root {
@@ -30,7 +20,7 @@
         --accent-foreground: '';
         --destructive: '';
         --destructive-foreground: '';
-        --border: '#2D384D';
+        --border: '#0C0B0D';
         --input: '';
         --ring: '';
         --radius: '';
@@ -83,32 +73,20 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+    background: #ed3d3d;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ED3D3D;
+    background: #0c0b0d;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ED3D3D;
+    background: #0c0b0d;
 }
-
-  .gilroy-bold {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .gilroy-medium {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
