@@ -66,9 +66,9 @@ export const Header = () => {
                     })}
                 </div>
 
-                <div className="rounded-full border border-white bg-[#393939]/25 px-4 py-2">
+                <Link href={'/chatbot'} className="rounded-full border border-white bg-[#393939]/25 px-4 py-2">
                     <p className="font-bold text-white">Try Wield</p>
-                </div>
+                </Link>
             </div>
         </header>
     );
