@@ -30,9 +30,9 @@ export function Section1({ height, activeHeight }: Section1Props) {
                 </div>
             </section>
 
-            <div className="absolute left-[40%] z-50 transition-none" style={{ top: `${activeHeight + (height / 2 - 100)}px`, opacity: opacity(), transform: `scale(${scale()}) translateY(${activeHeight}px)` }}>
+            <div className="absolute left-[calc(50%-210px)] z-50 transition-none" style={{ top: `${activeHeight + (height / 2 - 100)}px`, opacity: opacity(), transform: `scale(${scale()}) translateY(${activeHeight}px)` }}>
                 <div
-                    className="mb-24 text-[140px] font-bold text-[#FFE0E0] [text-shadow:0px_0px_5px_#fff]"
+                    className="text-[140px] font-bold text-[#FFE0E0] [text-shadow:0px_0px_5px_#fff]"
                 >
                     Wield
                 </div>
