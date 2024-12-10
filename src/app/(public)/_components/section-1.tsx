@@ -16,7 +16,7 @@ export function Section1() {
             </div>
 
             <div className='absolute size-full flex flex-col justify-center items-center'>
-                <p className='text-[140px] text-white mb-24 [text-shadow:0px_0px_5px_#fff] gilroy-bold'>Wield</p>
+                <p className='text-[140px] text-white mb-24 [text-shadow:0px_0px_5px_#fff] font-bold'>Wield</p>
             </div>
         </section>
     )

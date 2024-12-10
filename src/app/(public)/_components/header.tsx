@@ -53,7 +53,7 @@ export const Header = () => {
     }, [pathname]);
 
     return (
-        <header className="left-0 top-0 z-50 w-screen p-4 backdrop-blur-sm">
+        <header className="fixed left-0 top-0 z-50 w-screen p-4 backdrop-blur-sm">
             <div className="relative">
                 <div className="flex items-center justify-between gap-4 px-10 py-2">
                     <div className="flex items-center">

@@ -14,7 +14,7 @@ const ListTile = ({ title, description }: { title: string, description: string }
             data-aos-delay="100"
             data-aos-once="true"
         >
-            <p className='text-lg text-[#ED3D3D] [text-shadow:0px_0px_5px_#ED3D3D] gilroy-bold mb-2'>{title}</p>
+            <p className='text-lg text-[#ED3D3D] [text-shadow:0px_0px_5px_#ED3D3D] font-bold mb-2'>{title}</p>
             <p className='text-sm text-[#B5B0B0]'>{description}</p>
         </div>
     )
