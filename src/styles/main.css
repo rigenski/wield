@@ -14,8 +14,8 @@
 
 @layer base {
     :root {
-        --background: '#B1D3D2';
-        --foreground: '#2D384D';
+        --background: '#000';
+        --foreground: '#FFFF';
         --card: '';
         --card-foreground: '';
         --popover: '';

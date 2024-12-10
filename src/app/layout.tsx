@@ -129,13 +129,7 @@ export default async function Layout({ children }: TLayoutProps) {
                 `}
                     </style>
                 </head>
-                <body
-                    className={cn([
-                        balsamiqSans.variable,
-                        mulish.variable,
-                        'balsamiq-sans-regular bg-[#B1D3D2] font-balsamiqSans text-black antialiased',
-                    ])}
-                >
+                <body className={cn([balsamiqSans.variable, mulish.variable, 'font-balsamiqSans balsamiq-sans-regular antialiased bg-[url(/assets/layout/background.png)] relative'])}>
                     {!config?.maintenance?.isMaintenance ? (
                         <>
                             <Analytics config={config} />

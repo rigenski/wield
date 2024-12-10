@@ -22,7 +22,7 @@ const navigations: NavigationItem[] = [
 
 export const Header = () => {
     return (
-        <header className="sticky top-0 z-50 p-4 backdrop-blur-sm">
+        <header className="fixed top-0 w-screen z-50 p-4 backdrop-blur-sm">
             <div className="container flex items-center gap-4 px-4 py-2">
                 {/* Pages */}
                 <div className="flex gap-4">

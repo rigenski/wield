@@ -147,8 +147,8 @@ export const themeConfig: TConfig = {
     },
     theme: {
         root: {
-            background: '#ffffff',
-            foreground: '#000000',
+            background: '#000',
+            foreground: '#fff',
             card: '#f0f0f0',
             cardForeground: '#333333',
             popover: '#ffffff',
