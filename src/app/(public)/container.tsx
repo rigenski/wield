@@ -1,9 +1,10 @@
-'use client'
+'use client';
 
-import { useEffect, useRef, useState } from "react";
-import { Section1 } from "./_components/section-1";
-import { Section2 } from "./_components/section-2";
-import Image from "next/image";
+import { useEffect, useRef, useState } from 'react';
+import { Section1 } from './_components/section-1';
+import { Section2 } from './_components/section-2';
+import Image from 'next/image';
+import { RandomizedTextAnimation } from '@/components/randomized-text-animation';
 
 export default function Container() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -37,7 +38,9 @@ export default function Container() {
     }, []);
 
     return (
-        <div className="h-screen w-full relative">
+        <div className="relative h-screen w-full">
+            <RandomizedTextAnimation />
+
             <div className="fixed left-0 top-0 z-50">
                 <Image src="/assets/homepage/center-glow.png" alt="center-glow" width={480} height={480} className="h-[480px] w-full" />
             </div>
@@ -46,5 +49,5 @@ export default function Container() {
                 <Section2 />
             </div>
         </div>
-    )
+    );
 }
