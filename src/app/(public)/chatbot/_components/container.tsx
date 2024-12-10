@@ -29,26 +29,17 @@ export default function ChatbotContainer() {
                 <div className="w-1/2">
                     <div className="relative">
                         <div className="size-full">
-                            <video src="/assets/chatbot/video.mp4" autoPlay muted loop className="h-full w-full object-cover" />
+                            <div className="h-screen w-full bg-[url('/assets/chatbot/alien.svg')] bg-cover"></div>
                         </div>
                         <div className="absolute left-0 top-0 w-full">
                             <Image src="/assets/chatbot/gradient.png" alt="Gradient" width={1920} height={1080} className="h-full object-cover" />
                         </div>
-                        <div className="absolute left-0 top-0">
-                            <div className="px-4 py-8">
-                                <div className="flex items-center gap-4">
-                                    <Image src="/assets/chatbot/profile.png" alt="" width={480} height={480} className="size-12 rounded-full" />
-                                    <h2 className="text-2xl font-bold text-white">Title v1.0</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute left-[36%] top-[25%] -translate-x-[20%] -translate-y-[25%]">
-                            <Image src="/assets/chatbot/char.png" alt="Gradient" width={480} height={480} className="h-64 w-auto" />
-                        </div>
                     </div>
                 </div>
                 <div className="w-1/2">
-                    <Chat key={id} id={id} initialMessages={[]} selectedModelId={selectedModelId} />
+                    <div className="relative">
+                        <Chat key={id} id={id} initialMessages={[]} selectedModelId={selectedModelId} />
+                    </div>
                 </div>
             </div>
         </section>

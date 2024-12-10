@@ -1,7 +1,9 @@
+import Header from '@/app/(public)/_components/header';
+
 export default async function Page() {
     return (
-        <>
-            <h1>Hello World</h1>
-        </>
+        <div>
+            <Header />
+        </div>
     );
 }

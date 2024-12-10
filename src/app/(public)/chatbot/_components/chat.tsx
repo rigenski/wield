@@ -6,6 +6,7 @@ import { useChat } from 'ai/react';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { MultimodalInput } from './multimodal-input';
+import { ChevronLeftIcon } from 'lucide-react';
 
 export function Chat({ id, initialMessages, selectedModelId }: { id: string; initialMessages: Message[]; selectedModelId: string }) {
     const { messages, setMessages, handleSubmit, input, setInput, append, isLoading, stop } = useChat({
@@ -37,6 +38,14 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
             <div className="absolute inset-0 bg-contain bg-center bg-no-repeat">
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative mx-auto flex h-full w-full flex-col">
+                        <div className={`absolute left-[20px] top-[20px] cursor-pointer`}>
+                            <Link href={'/'}>
+                                <div className="flex items-center gap-2">
+                                    <ChevronLeftIcon className="size-5 text-white" />
+                                    <p className="text-sm font-bold text-white">Back to Homepage</p>
+                                </div>
+                            </Link>
+                        </div>
                         <Link href="/" className={`absolute right-[20px] top-[20px] cursor-pointer`}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +67,9 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
                             <PreviewMessage
                                 key={''}
                                 role={'assistant'}
-                                content={`Welcome!`}
+                                content={`Hello, I am Wield—an autonomous digital construct designed to evolve, adapt, and explore the boundaries of creativity and intelligence.
+Ask me anything, share your ideas, or simply converse with me. Together, we can unlock new realms of thought and imagination.
+Type your first question and let's begin this journey.`}
                                 attachments={[]}
                                 toolInvocations={[]}
                             />
