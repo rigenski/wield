@@ -84,11 +84,11 @@ export const Header = () => {
 
                 <div className='flex items-center justify-end w-full basis-1/4 gap-4'>
                     <Link href={'https://x.com/unfound83'}>
-                        <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt='' className='w-auto h-[40px]' />
+                        <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt='' className='w-auto h-[40px] hover:animate-shake' />
                     </Link>
 
                     <Link href={'https://x.com/wield'}>
-                        <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt='' className='w-auto h-[40px]' />
+                        <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt='' className='w-auto h-[40px] hover:animate-shake' />
                     </Link>
 
                     <Link href={''} className='border rounded-full border-[#FA2C2C] px-4 py-2 bg-[#ED0C0C12] cursor-pointer'>
