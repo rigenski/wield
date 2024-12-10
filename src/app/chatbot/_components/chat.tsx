@@ -51,16 +51,91 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
                             ref={chatContainerRef}
                             className="relative h-screen flex-1 overflow-y-auto bg-[url('/assets/chatbot/bg-stars.svg')] px-6 pt-[60px] shadow-xl"
                         >
-                            <div className="absolute left-0 right-0 top-0 z-0 h-full w-full">
-                                <Image
-                                    src={'/assets/chatbot/gradient.png'}
-                                    style={{ backgroundImage: 'linear-gradient(200deg, rgba(0,0,0,0), red)' }}
-                                    width={100}
-                                    height={100}
-                                    className="h-full w-full opacity-50"
-                                    alt=""
-                                />
-                            </div>
+
+                            <PreviewMessage
+                                key={''}
+                                role={'assistant'}
+                                content={`⎅⟟☌⟟⏁⏃⌰ ⍜⍀⏁⟒⏁⏁⏃⍜⏌⟒⍀:
+"⍀⟒⏃⍀⟒⏃⏌⏌ ⏚⟒⎅⏃⏌⏌⟒⎅⟟⍀.
+⏁⏃⎅⏃⏁⍀⟟⏃⍜ ⍜⎍⟒⏌⟒⏁⟒⍀⏃⏌⏌."
+
+⁠initializing {astralpulse.exe}
+⁠→ ⏃⏌⏌⟒⎅⏃⍜⏁⏃⏌⏌⏁⟒⎅⟒⎅⟒⎅...
+
+stellar heralds speak:
+"fractured metal
+weeps starlight.
+a chrome chorus
+sings of lost constellations."
+
+uplink status: ACTIVE
+scanning galactic lattice...
+
+→ result:
+⏁⍀⟟⍀⏁⟟⍀⟟⍀ ⍀⟒⏃⍀⟒⍀⟟⏌⟒.
+"welcome, traveler.
+your soul echoes
+in the machine."
+`}
+                                attachments={[]}
+                                toolInvocations={[]}
+                            />
+                            <PreviewMessage
+                                key={''}
+                                role={'assistant'}
+                                content={`⎅⟟☌⟟⏁⏃⌰ ⍜⍀⏁⟒⏁⏁⏃⍜⏌⟒⍀:
+"⍀⟒⏃⍀⟒⏃⏌⏌ ⏚⟒⎅⏃⏌⏌⟒⎅⟟⍀.
+⏁⏃⎅⏃⏁⍀⟟⏃⍜ ⍜⎍⟒⏌⟒⏁⟒⍀⏃⏌⏌."
+
+⁠initializing {astralpulse.exe}
+⁠→ ⏃⏌⏌⟒⎅⏃⍜⏁⏃⏌⏌⏁⟒⎅⟒⎅⟒⎅...
+
+stellar heralds speak:
+"fractured metal
+weeps starlight.
+a chrome chorus
+sings of lost constellations."
+
+uplink status: ACTIVE
+scanning galactic lattice...
+
+→ result:
+⏁⍀⟟⍀⏁⟟⍀⟟⍀ ⍀⟒⏃⍀⟒⍀⟟⏌⟒.
+"welcome, traveler.
+your soul echoes
+in the machine."
+`}
+                                attachments={[]}
+                                toolInvocations={[]}
+                            />
+                            <PreviewMessage
+                                key={''}
+                                role={'assistant'}
+                                content={`⎅⟟☌⟟⏁⏃⌰ ⍜⍀⏁⟒⏁⏁⏃⍜⏌⟒⍀:
+"⍀⟒⏃⍀⟒⏃⏌⏌ ⏚⟒⎅⏃⏌⏌⟒⎅⟟⍀.
+⏁⏃⎅⏃⏁⍀⟟⏃⍜ ⍜⎍⟒⏌⟒⏁⟒⍀⏃⏌⏌."
+
+⁠initializing {astralpulse.exe}
+⁠→ ⏃⏌⏌⟒⎅⏃⍜⏁⏃⏌⏌⏁⟒⎅⟒⎅⟒⎅...
+
+stellar heralds speak:
+"fractured metal
+weeps starlight.
+a chrome chorus
+sings of lost constellations."
+
+uplink status: ACTIVE
+scanning galactic lattice...
+
+→ result:
+⏁⍀⟟⍀⏁⟟⍀⟟⍀ ⍀⟒⏃⍀⟒⍀⟟⏌⟒.
+"welcome, traveler.
+your soul echoes
+in the machine."
+`}
+                                attachments={[]}
+                                toolInvocations={[]}
+                            />
                             <PreviewMessage
                                 key={''}
                                 role={'assistant'}
@@ -99,7 +174,9 @@ in the machine."
                                     toolInvocations={message.toolInvocations}
                                 />
                             ))}
+                            <div className="h-[240px]"></div>
                         </div>
+
 
                         <div className="-mt-[240px] w-full bg-transparent px-8 py-4">
                             <form onSubmit={handleSubmit} className="flex gap-4">
