@@ -22,7 +22,7 @@ export default function Content() {
                                     <div className="mb-8">
                                         <p className="text-2xl font-bold">WIELD</p>
                                         <p className="mb-2">v1.0 Model</p>
-                                        <p className="font-bold">CA:</p>
+                                        <p className="font-bold">CA: 81iBsrzF8UNt4b5JP7UpDosWMPPRQ6C8725wyF8boCiB</p>
                                     </div>
                                     <div className="mb-12">
                                         <div className="w-full border-[0.5px] border-[#ed3d3d] opacity-50"></div>
