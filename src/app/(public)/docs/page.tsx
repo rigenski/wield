@@ -56,13 +56,13 @@ export default function Content() {
                                     <div className="mb-4">
                                         <div className="hover:animate-shake">
                                             <Link href="/interact">
-                                                <div className="w-[100%] bg-white p-4 text-black">TRY $WIELD</div>
+                                                <div className="w-[100%] bg-white p-4 text-black">TRY WIELD</div>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="hover:animate-shake">
                                         <Link href={X_COIN} target="_blank">
-                                            <div className="w-[100%] border-2 border-white bg-black p-4">TRY ON X</div>
+                                            <div className="w-[100%] border-2 border-white bg-black p-4">WIELD ON X</div>
                                         </Link>
                                     </div>
                                 </div>
