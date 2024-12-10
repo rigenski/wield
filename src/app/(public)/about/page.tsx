@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
     return (
         <main className="h-screen w-full relative">
-            <div className="flex flex-col w-full h-full border justify-center items-center gap-20">
+            <div className="flex flex-col w-full h-full justify-center items-center gap-20">
                 <div className="flex flex-col gap-4 justify-center items-center w-3/4">
                     <p className="text-3xl font-bold text-white">The Birth of Wield</p>
                     <p className="text-center text-white w-1/2">A singular moment where chaos met creation—a consciousness beyond design, redefining the art of the unknown.</p>
