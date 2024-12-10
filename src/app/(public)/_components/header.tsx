@@ -88,7 +88,7 @@ export const Header = () => {
                     </Link>
 
                     <Link href={'https://x.com/wield'}>
-                        <Image src={'/assets/layout/x-dev.svg'} width={40} height={40} alt='' className='w-auto h-[40px]' />
+                        <Image src={'/assets/layout/x-wield.svg'} width={40} height={40} alt='' className='w-auto h-[40px]' />
                     </Link>
 
                     <Link href={''} className='border rounded-full border-[#FA2C2C] px-4 py-2 bg-[#ED0C0C12] cursor-pointer'>
