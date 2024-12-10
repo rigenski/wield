@@ -78,26 +78,27 @@
     body {
         @apply bg-background text-foreground;
         overflow-x: hidden;
+        overscroll-behavior: none;
     }
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #E0DCC1;
+  background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2D384D;
+  background: #ED3D3D;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2D384D;
+  background: #ED3D3D;
 }
 
   .gilroy-bold {
