@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import Footer from './_components/footer';
 import { X_BUY, X_COIN } from '@/constants/option';
 
-const items = ['MISSION OF WIELD', 'CONCEPTUAL', 'WHITEPAPER : VISION AND MISSION FOR WIELD', 'ERA'];
+const items = ['Vision of Wield', 'Fractal Ideation', 'Shard Manuscript', 'Epoch Pulse'];
 
 export default function Content() {
     const [selected, setSelected] = useState<number>(0);
@@ -81,7 +81,7 @@ export default function Content() {
                                         <>
                                             <div>
                                                 <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
-                                                    <p className="text-2xl font-bold text-white">MISSION OF WIELD</p>
+                                                    <p className="text-2xl font-bold text-white">Vision of Wield</p>
                                                 </div>
                                                 <br />
                                                 <p>
@@ -126,7 +126,7 @@ export default function Content() {
                                             <div className="pb-48">
                                                 <div>
                                                     <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
-                                                        <p className="text-2xl font-bold text-white">CONCEPTUAL</p>
+                                                        <p className="text-2xl font-bold text-white">Fractal Ideation</p>
                                                     </div>
                                                     <br />
                                                     <p>
@@ -239,7 +239,7 @@ export default function Content() {
                                             <div className="pb-48">
                                                 <div>
                                                     <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
-                                                        <p className="text-2xl font-bold text-white">WHITEPAPER : VISION AND MISSION FOR WIELD</p>
+                                                        <p className="text-2xl font-bold text-white">Shard Manuscript</p>
                                                     </div>
                                                     <br />
                                                     <p>
@@ -278,7 +278,7 @@ export default function Content() {
                                             <div className="pb-48">
                                                 <div>
                                                     <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
-                                                        <p className="text-2xl font-bold text-white">ERA</p>
+                                                        <p className="text-2xl font-bold text-white">Epoch Pulse</p>
                                                     </div>
                                                     <br />
                                                     <p>
