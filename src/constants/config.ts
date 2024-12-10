@@ -134,10 +134,10 @@ export interface TConfig {
 
 export const themeConfig: TConfig = {
     meta: {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        description: 'Description',
-        name: 'Name',
+        title: 'Wield',
+        subtitle: 'The Birth of Wield',
+        description: 'The Birth of Wield',
+        name: 'Wield',
         url: '/',
         favicon: '/logo.png',
         logo: {
