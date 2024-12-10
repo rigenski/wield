@@ -1,4 +1,3 @@
-import Image from "next/image";
 import DescBox from "./_components/descBox";
 
 export default function Page() {
