@@ -21,7 +21,7 @@ const fontGilroy = localFont({
             weight: '500',
         },
     ],
-    variable: '--font-cabinet-groteks',
+    variable: '--font-gilroy',
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -78,6 +78,7 @@ export default async function Layout({ children }: TLayoutProps) {
             <html lang="en" className={cn(['scroll-smooth [--scroll-mt:9.875rem]', 'lg:[--scroll-mt:6.3125rem]'])} suppressHydrationWarning>
                 <head>
                     <PublicEnvScript />
+                    <meta name="theme-color" content="#ED3D3D"></meta>
                 </head>
                 <body className={cn([fontGilroy.variable, 'font-gilroy relative bg-[url(/assets/layout/background.png)] antialiased'])}>
                     {!config?.maintenance?.isMaintenance ? (

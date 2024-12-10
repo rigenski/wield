@@ -22,7 +22,7 @@ const config = {
         },
         extend: {
             fontFamily: {
-                gilroy: ['var(--font-gilroy)', ...defaultTheme.fontFamily.sans],
+                gilroy: ['var(--font-gilroy)'],
             },
             colors: {
                 border: 'hsl(var(--border))',
