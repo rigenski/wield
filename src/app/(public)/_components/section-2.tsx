@@ -31,9 +31,9 @@ export function Section2() {
                         </div>
                     </Link>
 
-                    <Link href={'/chatbot'} className="flex-1">
-                        <div className="flex w-full flex-col border border-[#ED3D3D] bg-[#700C11]/50 px-4 py-8">
-                            <p className="text-xl font-bold text-white">Chatbot</p>
+                    <Link href={'/interact'} className="flex-1">
+                        <div className="py-8 px-4 flex flex-col w-full border border-[#ED3D3D] bg-[#700C11]/50">
+                            <p className="text-xl font-bold text-white">Interact</p>
                             <p className="text-xs text-[#C4C4C4]">Convers with the Future</p>
                         </div>
                     </Link>

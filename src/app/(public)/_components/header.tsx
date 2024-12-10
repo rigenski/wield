@@ -19,8 +19,8 @@ const navigations: NavigationItem[] = [
         tab: 0,
     },
     {
-        title: 'Chatbot',
-        link: '/chatbot',
+        title: 'Interact',
+        link: '/interact',
         tab: 1,
     },
     {
@@ -36,7 +36,7 @@ const navigations: NavigationItem[] = [
 ];
 
 const HOME = "/"
-const CHATBOT = '/chatbot'
+const INTERACT = '/interact'
 const ARCHITECTURE = "/architecture"
 const ABOUT = "/about"
 
@@ -49,7 +49,7 @@ export const Header = () => {
             case HOME:
                 setActiveTab(0);
                 break;
-            case CHATBOT:
+            case INTERACT:
                 setActiveTab(1);
                 break;
             case ARCHITECTURE:
