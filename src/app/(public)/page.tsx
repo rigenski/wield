@@ -7,7 +7,7 @@ export default async function Page() {
     return (
         <div>
             <Section1 />
-            <Empty />
+            {/* <Empty /> */}
             <Section2/>
         </div>
     );
