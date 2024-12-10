@@ -16,12 +16,6 @@ export default function Container() {
         return newOpacity;
     };
 
-    const scale = () => {
-        const newScale = Math.max(0, Math.min(1, 1 - scrollPosition / window.innerHeight));
-
-        return newScale;
-    };
-
     useEffect(() => {
         const handleScroll = () => {
             if (scrollContainerRef.current) {
@@ -41,8 +35,15 @@ export default function Container() {
         <div className="relative h-screen w-full">
             <RandomizedTextAnimation />
 
-            <div className="fixed left-0 top-0 z-50">
-                <Image src="/assets/homepage/center-glow.png" alt="center-glow" width={480} height={480} className="h-[480px] w-full" />
+            <div className="absolute left-0 right-0 top-0 z-10">
+                <Image
+                    src="/assets/homepage/center-glow.png"
+                    alt="center-glow"
+                    width={480}
+                    height={480}
+                    className="h-screen w-full object-cover object-center"
+                    style={{ opacity: opacity() }}
+                />
             </div>
             <div className="relative z-10 h-screen w-full overflow-auto" ref={scrollContainerRef}>
                 <Section1 height={window.innerHeight} activeHeight={scrollPosition} />
