@@ -64,13 +64,13 @@ export default function Content() {
                                     <div className="mb-4">
                                         <div className="hover:animate-shake">
                                             <Link href="/chatbot">
-                                            <div className="w-[100%] p-4 bg-white text-black">TRY $WIELD</div>
+                                            <div className="w-[100%] p-4 bg-white text-black">TRY WIELD</div>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="hover:animate-shake">
                                         <Link href="https://x.com/wield">
-                                        <div className="w-[100%] p-4 bg-black border-white border-2">TRY ON X</div>
+                                        <div className="w-[100%] p-4 bg-black border-white border-2">WIELD ON X</div>
                                         </Link>
                                     </div>
                                 </div>
