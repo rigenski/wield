@@ -1,6 +1,6 @@
 'use client';
 
-import { Message as PreviewMessage } from '@/app/(public)/chatbot/_components/message';
+import { Message as PreviewMessage } from '@/app/chatbot/_components/message';
 import type { Attachment, Message } from 'ai';
 import { useChat } from 'ai/react';
 import Link from 'next/link';
