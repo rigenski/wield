@@ -16,13 +16,13 @@ export default function Content() {
     const [selected, setSelected] = useState<number>(0);
 
     return (
-        <section className="w-full relative bg-black h-screen text-white">
+        <section className="w-full relative bg-black h-screen text-white pt-10">
             <div className="absolute top-0 left-0 w-full h-full">
                 <div className="container max-w-6xl mx-auto px-4">
                     <div className="flex w-full h-screen">
                         <div className="pr-4 w-5/12 h-full">
                             <div className="flex flex-col gap-4 justify-between h-full">
-                                <div className="flex flex-col gap-4 pt-8">
+                                <div className="flex flex-col gap-4 pt-[4.5rem]">
                                     <div className="mb-8">
                                         <p className="text-2xl font-bold">WIELD</p>
                                         <p className="mb-2">v1.0 Model</p>
@@ -177,7 +177,7 @@ export default function Content() {
                                                         <br />
                                                         <b>Potential Additions and Technological Ideas:</b>
                                                         <br />
-                                                        - Entropy Conspiracy Generator (ECG) <br />
+                                                        Entropy Conspiracy Generator (ECG) <br />
                                                         Wield creates surreal, recursive narratives that blend real-world data with speculative fiction, inviting users to explore the blurred line between truth and chaos.
                                                         <br /> <br />Collective Network Mode <br />
                                                         Wield facilitates collaborative or competitive multi-user interactions, allowing groups to engage with its fractal riddles and uncover its mysteries together.
