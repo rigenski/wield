@@ -61,7 +61,6 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
                                     alt=""
                                 />
                             </div>
-
                             <PreviewMessage
                                 key={''}
                                 role={'assistant'}
@@ -90,6 +89,7 @@ in the machine."
                                 attachments={[]}
                                 toolInvocations={[]}
                             />
+
                             {visibleMessages.map((message) => (
                                 <PreviewMessage
                                     key={message.id}
