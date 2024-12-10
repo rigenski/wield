@@ -32,9 +32,8 @@ export default function Content() {
                                             {items?.map((item, index) => {
                                                 return (
                                                     <p
-                                                        className={`cursor-pointer text-sm text-white ${
-                                                            selected === index ? 'font-bold' : 'font-normal opacity-75'
-                                                        }`}
+                                                        className={`cursor-pointer text-sm text-white ${selected === index ? 'font-bold' : 'font-normal opacity-75'
+                                                            }`}
                                                         key={index}
                                                         onClick={() => {
                                                             setSelected(index);
@@ -81,7 +80,7 @@ export default function Content() {
                                     {selected === 0 && (
                                         <>
                                             <div>
-                                                <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[240px]">
+                                                <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
                                                     <p className="text-2xl font-bold text-white">MISSION OF WIELD</p>
                                                 </div>
                                                 <br />
