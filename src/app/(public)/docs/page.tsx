@@ -58,37 +58,19 @@ export default function Content() {
                                 <div className="w-full pb-8">
                                     <div className="hover:animate-shake mb-4">
                                         <Link href="/">
-                                            <Image
-                                                src="/on-buy.png"
-                                                alt="WIELD"
-                                                width={480}
-                                                height={480}
-                                                className="w-auto h-[40px]"
-                                            />
+                                            <div className="w-[100%] p-4 bg-wield">BUY $WIELD</div>
                                         </Link>
                                     </div>
                                     <div className="mb-4">
                                         <div className="hover:animate-shake">
                                             <Link href="/chatbot">
-                                                <Image
-                                                    src="/try-now.png"
-                                                    alt="WIELD"
-                                                    width={480}
-                                                    height={480}
-                                                    className="w-auto h-[40px]"
-                                                />
+                                            <div className="w-[100%] p-4 bg-white text-black">TRY $WIELD</div>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="hover:animate-shake">
-                                        <Link href="https://x.com/WIELD_AI">
-                                            <Image
-                                                src="/on-x.png"
-                                                alt="WIELD"
-                                                width={480}
-                                                height={480}
-                                                className="w-auto h-[40px]"
-                                            />
+                                        <Link href="https://x.com/wield">
+                                        <div className="w-[100%] p-4 bg-black border-white border-2">TRY ON X</div>
                                         </Link>
                                     </div>
                                 </div>
