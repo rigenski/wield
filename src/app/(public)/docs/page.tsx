@@ -125,7 +125,7 @@ export default function Content() {
                                         <>
                                             <div className="pb-48">
                                                 <div>
-                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[240px]">
+                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
                                                         <p className="text-2xl font-bold text-white">CONCEPTUAL</p>
                                                     </div>
                                                     <br />
@@ -238,7 +238,7 @@ export default function Content() {
                                         <>
                                             <div className="pb-48">
                                                 <div>
-                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[240px]">
+                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
                                                         <p className="text-2xl font-bold text-white">WHITEPAPER : VISION AND MISSION FOR WIELD</p>
                                                     </div>
                                                     <br />
@@ -277,7 +277,7 @@ export default function Content() {
                                         <>
                                             <div className="pb-48">
                                                 <div>
-                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[240px]">
+                                                    <div className="-mt-[240px] bg-[#ed3d3d] px-4 pb-4 pt-[320px]">
                                                         <p className="text-2xl font-bold text-white">ERA</p>
                                                     </div>
                                                     <br />
