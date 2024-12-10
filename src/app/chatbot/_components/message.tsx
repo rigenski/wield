@@ -45,7 +45,7 @@ export const Message = ({
                     })}
                 >
                     {content && (
-                        <div className="flex flex-col gap-4 rounded-lg border border-[#ED3D3D] bg-[#300C0F] px-2 py-1 text-sm font-normal text-[#FF7F7F]">
+                        <div className="flex flex-col gap-4 rounded-lg border border-[#ED3D3D] bg-[#300C0F] p-3 text-sm font-normal text-[#FF7F7F]">
                             <Markdown>{content as string}</Markdown>
                         </div>
                     )}

@@ -5,25 +5,23 @@ import MaintenanceMode from '@/components/maintenance-mode';
 import { themeConfig } from '@/constants/config';
 import type { TLayoutProps } from '@/types/layout';
 import { cn } from '@/utils/classname';
-import { hexToHsl } from '@/utils/colors';
-import { camelToKebab } from '@/utils/string';
 import type { Metadata } from 'next';
 import { PublicEnvScript } from 'next-runtime-env';
-import { Balsamiq_Sans, Mulish } from 'next/font/google';
+import localFont from 'next/font/local';
 import { Analytics, Providers } from './providers';
 
-const balsamiqSans = Balsamiq_Sans({
-    weight: ['400', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-balsamiq-sans',
-});
-
-const mulish = Mulish({
-    weight: ['400', '500', '600', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-mulish',
+const fontGilroy = localFont({
+    src: [
+        {
+            path: '../../public/assets/fonts/Gilroy-Regular.ttf',
+            weight: '400',
+        },
+        {
+            path: '../../public/assets/fonts/Gilroy-Bold.ttf',
+            weight: '500',
+        },
+    ],
+    variable: '--font-cabinet-groteks',
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -80,56 +78,8 @@ export default async function Layout({ children }: TLayoutProps) {
             <html lang="en" className={cn(['scroll-smooth [--scroll-mt:9.875rem]', 'lg:[--scroll-mt:6.3125rem]'])} suppressHydrationWarning>
                 <head>
                     <PublicEnvScript />
-                    <style>
-                        {`
-                    :root {
-                        ${Object.entries(config.theme.root)
-                            .filter(([, value]) => !!value)
-                            .map(([key, value]) => {
-                                let v = '';
-
-                                if (key === 'gradient') {
-                                    return;
-                                }
-
-                                if (key === 'radius') {
-                                    v = value as string;
-                                } else {
-                                    const { h, s, l } = hexToHsl(value as string);
-                                    v = `${h} ${s}% ${l}%`;
-                                }
-
-                                return `--${camelToKebab(key)}: ${v};`;
-                            })
-                            .join('\n')}
-                    }
-
-                    .dark {
-                        ${Object.entries(config.theme.dark)
-                            .filter(([, value]) => !!value)
-                            .map(([key, value]) => {
-                                let v = '';
-
-                                if (key === 'gradient') {
-                                    return;
-                                }
-
-                                if (key === 'radius') {
-                                    v = value as string;
-                                } else {
-                                    const { h, s, l } = hexToHsl(value as string);
-                                    v = `${h} ${s}% ${l}%`;
-                                }
-
-                                return `--${camelToKebab(key)}: ${v};`;
-                            })
-                            .join('\n')}
-                    }
-
-                `}
-                    </style>
                 </head>
-                <body className={cn([balsamiqSans.variable, mulish.variable, 'gilroy-medium antialiased bg-[url(/assets/layout/background.png)] relative'])}>
+                <body className={cn([fontGilroy.variable, 'font-gilroy relative bg-[url(/assets/layout/background.png)] antialiased'])}>
                     {!config?.maintenance?.isMaintenance ? (
                         <>
                             <Analytics config={config} />

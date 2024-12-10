@@ -17,7 +17,7 @@ export function MultimodalInput({
     setAttachments,
     handleSubmit,
     className,
-    placeholder = 'Ask him Anything',
+    placeholder = 'ASK HIM ANYTHIING',
 }: {
     input: string;
     setInput: (value: string) => void;
@@ -63,7 +63,7 @@ export function MultimodalInput({
                 value={input}
                 onChange={handleInput}
                 placeholder={placeholder}
-                className={cn('relative z-20 min-h-[57px] resize-none overflow-hidden rounded-2xl bg-white font-mulish', className)}
+                className={cn('relative z-20 min-h-[57px] resize-none overflow-hidden placeholder:text-[#FF7F7F] bg-[#ED3D3D]/10 border  border-[#ED3D3D]', className)}
                 onKeyDown={(event: React.KeyboardEvent<HTMLTextAreaElement>) => {
                     if (event.key === 'Enter' && !event.shiftKey) {
                         event.preventDefault();
